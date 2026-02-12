@@ -1,0 +1,171 @@
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  height: var(--header-height);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(10, 10, 10, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--color-border);
+  will-change: transform;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: var(--max-width);
+  padding: 0 var(--space-md);
+}
+
+.logo {
+  font-family: var(--font-heading);
+  font-size: var(--text-lg);
+  font-weight: 700;
+  color: var(--color-text);
+  transition: color var(--transition-fast);
+}
+
+.logo:hover {
+  color: var(--color-accent);
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  gap: var(--space-lg);
+}
+
+.link {
+  font-size: var(--text-sm);
+  font-weight: 500;
+  color: var(--color-muted);
+  transition: color var(--transition-fast);
+  position: relative;
+}
+
+.link::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--color-accent);
+  transition: width var(--transition-default);
+}
+
+.link:hover {
+  color: var(--color-text);
+}
+
+.link:hover::after {
+  width: 100%;
+}
+
+.linkActive {
+  composes: link;
+  color: var(--color-text);
+}
+
+.linkActive::after {
+  width: 100%;
+}
+
+/* Mobile menu toggle */
+.menuButton {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: var(--space-xs);
+  color: var(--color-text);
+}
+
+.menuIcon {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background-color: currentColor;
+  position: relative;
+  transition: background-color var(--transition-fast);
+}
+
+.menuIcon::before,
+.menuIcon::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: currentColor;
+  transition: transform var(--transition-default);
+}
+
+.menuIcon::before {
+  top: -7px;
+}
+
+.menuIcon::after {
+  top: 7px;
+}
+
+.menuIconOpen {
+  composes: menuIcon;
+  background-color: transparent;
+}
+
+.menuIconOpen::before {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+.menuIconOpen::after {
+  transform: rotate(-45deg);
+  top: 0;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .menuButton {
+    display: block;
+  }
+
+  .list {
+    position: fixed;
+    top: var(--header-height);
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    background-color: rgba(10, 10, 10, 0.95);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--color-border);
+    padding: var(--space-md) 0;
+    transform: translateY(-100%);
+    opacity: 0;
+    pointer-events: none;
+    transition: transform var(--transition-default), opacity var(--transition-default);
+  }
+
+  .listOpen {
+    composes: list;
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .link,
+  .linkActive {
+    padding: var(--space-sm) var(--space-md);
+    font-size: var(--text-base);
+  }
+}

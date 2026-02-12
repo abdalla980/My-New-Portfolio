@@ -1,0 +1,27 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx tsc:*)",
+      "Bash(npx vite:*)",
+      "Bash(npm install:*)",
+      "Bash(npm run lint:*)",
+      "WebFetch(domain:www.basili.co)",
+      "WebSearch",
+      "Bash(npm run build:*)",
+      "Bash(winget install:*)",
+      "Bash(where.exe:*)",
+      "Bash(dir:*)",
+      "Bash(dir \"C:\\\\Program Files \\(x86\\)\\\\GitHub CLI\\\\gh.exe\")",
+      "Bash(\"C:\\\\Program Files\\\\GitHub CLI\\\\gh.exe\" auth token)",
+      "Bash(\"C:\\\\Program Files\\\\GitHub CLI\\\\gh.exe\" auth status)",
+      "Bash(gh repo list:*)",
+      "Bash(claude mcp add:*)",
+      "Bash(git -C \"C:\\\\Users\\\\abdul\\\\Downloads\\\\Gsap\\\\gsap\" remote -v)",
+      "Bash(git -C \"C:\\\\Users\\\\abdul\\\\Downloads\\\\Gsap\\\\gsap\" status)",
+      "Bash(git -C \"C:\\\\Users\\\\abdul\\\\Downloads\\\\Gsap\\\\gsap\" log --oneline -5)",
+      "Bash(git -C \"C:\\\\Users\\\\abdul\\\\Downloads\\\\Gsap\\\\gsap\" diff --stat)",
+      "Bash(git -C \"C:\\\\Users\\\\abdul\\\\Downloads\\\\Gsap\\\\gsap\" diff --cached --stat)",
+      "Bash(git -C \"C:\\\\Users\\\\abdul\\\\Downloads\\\\Gsap\\\\gsap\" add .claude/agents/react-frontend-builder.md .claude/plans/plans.md .claude/settings.json .claude/settings.local.json .claude/skills/ .mcp.json CLAUDE.md index.html package-lock.json package.json portfolio.spec.md public/robots.txt public/sitemap.xml src/)"
+    ]
+  }
+}

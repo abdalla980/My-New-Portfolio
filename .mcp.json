@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "github-server": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-github@latest"
+      ],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "your-token-here"
+      }
+    }
+  }
+}

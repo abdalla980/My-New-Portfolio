@@ -2,13 +2,46 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>gsap</title>
+    <title>Portfolio — Web Developer &amp; Designer</title>
+    <meta name="description" content="Personal portfolio showcasing web development projects, design work, and software engineering expertise." />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Portfolio — Web Developer & Designer" />
+    <meta property="og:description" content="Personal portfolio showcasing web development projects, design work, and software engineering expertise." />
+    <meta property="og:url" content="https://example.com" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://example.com" />
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Your Name",
+        "url": "https://example.com",
+        "jobTitle": "Web Developer & Designer",
+        "sameAs": [
+          "https://github.com",
+          "https://linkedin.com",
+          "https://twitter.com"
+        ]
+      }
+    </script>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+
+    <!-- Fonts: Inter + Space Grotesk (self-hosted via Google Fonts) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
   </body>
 </html>
