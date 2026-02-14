@@ -17,6 +17,13 @@ dist-ssr
 *.avi
 public/videoorange.mp4
 
+# Environment variables
+.env
+.env.*
+
+# MCP config (contains tokens)
+.mcp.json
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

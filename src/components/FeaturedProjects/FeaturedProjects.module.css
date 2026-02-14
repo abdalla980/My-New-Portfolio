@@ -1,5 +1,9 @@
 .section {
   padding: var(--space-3xl) var(--space-md);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .container {
