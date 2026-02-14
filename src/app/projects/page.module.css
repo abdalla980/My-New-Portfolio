@@ -20,6 +20,22 @@
   will-change: transform, clip-path;
 }
 
+.categorySection {
+  margin-bottom: var(--space-3xl);
+}
+
+.categoryHeadingWrap {
+  overflow: hidden;
+  margin-bottom: var(--space-lg);
+}
+
+.categoryHeading {
+  font-size: var(--text-xl);
+  font-weight: 600;
+  color: var(--color-text-secondary);
+  will-change: transform, clip-path;
+}
+
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

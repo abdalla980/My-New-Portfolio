@@ -9,7 +9,7 @@ gsap.registerPlugin(ScrollTrigger);
 const socialLinks = [
   { href: 'https://github.com', label: 'GitHub' },
   { href: 'https://linkedin.com', label: 'LinkedIn' },
-  { href: 'https://twitter.com', label: 'X / Twitter' },
+  { href: 'https://www.behance.net/AbdallaBabikir', label: 'Behance' },
 ] as const;
 
 export function Contact() {
@@ -79,8 +79,8 @@ export function Contact() {
 
         <div className={styles.emailWrap}>
           <MagneticButton strength={0.2}>
-            <a href="mailto:hello@example.com" className={styles.emailLink}>
-              hello@example.com
+            <a href="mailto:abdullahizzldin1@gmail.com" className={styles.emailLink}>
+              abdullahizzldin1@gmail.com
             </a>
           </MagneticButton>
         </div>

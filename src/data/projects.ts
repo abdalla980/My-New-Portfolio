@@ -5,6 +5,7 @@ export interface Project {
   longDescription?: string;
   thumbnail: string;
   tags: string[];
+  category: 'Webpages' | 'UI/UX Design' | 'Mobile Applications';
   liveUrl?: string;
   githubUrl?: string;
   featured: boolean;
@@ -14,53 +15,83 @@ export interface Project {
 export const projects: Project[] = [
   {
     slug: 'project-one',
-    title: 'E-Commerce Platform',
+    title: 'CodeReflex-LandingPage',
     description:
-      'A full-stack e-commerce app with cart, checkout, and payment integration.',
-    thumbnail: '/images/project1.jpg',
-    tags: ['Next.js', 'Stripe', 'PostgreSQL'],
-    liveUrl: 'https://example.com',
-    githubUrl: 'https://github.com/username/project',
+      'Daily micro-questions that keep your coding skills sharp, without coding sessions.',
+    thumbnail: './CodereflexLogo.png',
+    tags: ['React.js', 'CSS', 'Typescript'],
+    category: 'Webpages',
+    liveUrl: 'https://codereflex.netlify.app/',
+    githubUrl: 'https://github.com/abdalla980/CodeReflex-Landing-page',
     featured: true,
     date: '2025-06',
   },
   {
     slug: 'project-two',
-    title: 'AI Dashboard',
+    title: 'Online English Teaching',
     description:
-      'Real-time analytics dashboard for monitoring ML model performance.',
-    thumbnail: '/images/project2.jpg',
-    tags: ['React', 'D3.js', 'Python'],
+      'A personalized English learning website for a English Language Coach.',
+    thumbnail: '/img_4.png  ',
+    tags: ['React', 'Typescript', 'CSS'],
+    category: 'Webpages',
+    liveUrl: "https://englishwithahmed.netlify.app/",
+    githubUrl: "https://github.com/abdalla980/Online-English-Teaching",
     featured: true,
     date: '2025-03',
   },
   {
     slug: 'project-three',
-    title: 'Task Management App',
+    title: '8zoneStore',
     description:
-      'Collaborative task manager with real-time updates and team features.',
-    thumbnail: '/images/project3.jpg',
-    tags: ['React', 'Node.js', 'Socket.io'],
+      "Designed and developed a responsive e-commerce website for a client, leveraging React.js and modern libraries to deliver a seamless user experience and address real-world business needs.",
+    thumbnail: '/img_2.png',
+    tags: ['React', 'Typescript', 'CSS'],
+    githubUrl: 'https://github.com/abdalla980/8zone-store',
+    liveUrl:"https://8zonestore.netlify.app/",
+    category: 'Webpages',
     featured: true,
     date: '2024-11',
   },
   {
     slug: 'project-four',
-    title: 'Weather App',
+    title: 'Atmosfair-Redesign ',
     description:
-      'Beautiful weather app with location-based forecasts and animated visuals.',
-    thumbnail: '/images/project4.jpg',
-    tags: ['React', 'OpenWeather API', 'GSAP'],
+      'Atmosfair is a German non-profit organization that actively contributes to CO₂ mitigation by promoting, developing and financing renewable energies in over 20 countries worldwide. ',
+    thumbnail: './atmosfairLogo.png',
+    tags: ['Figma','UI/UX Design'],
+    liveUrl:'https://www.behance.net/gallery/231106545/Atmosfair-Website-Redesign',
+    category: 'UI/UX Design',
     featured: false,
     date: '2024-08',
   },
   {
     slug: 'project-five',
-    title: 'Portfolio V1',
+    title: 'CodeReflex',
     description:
-      'My first portfolio website built with vanilla HTML, CSS, and JavaScript.',
-    thumbnail: '/images/project5.jpg',
-    tags: ['HTML', 'CSS', 'JavaScript'],
+        'Daily micro-questions that keep your coding skills sharp, without coding sessions.',
+    thumbnail: './CodeReflex.png',
+    tags: ['Dart', 'Flutter', 'CSS'],
+    category: 'Mobile Applications',
+    featured: false,
+    date: '2024-05',
+  },
+  {
+    slug: 'project-five',
+    title: "Coco's Marketing Application",
+    description: " A collaborative project built to help businesses and creators improve their marketing by managing social media, requesting websites, and tracking performance — all from one dashboard.",
+    thumbnail: './coco3.png',
+    tags: ['Dart', 'Flutter', 'CSS'],
+    category: 'Mobile Applications',
+    featured: false,
+    date: '2024-05',
+  },
+  {
+    slug: 'project-five',
+    title: "Deutsch Genie",
+    description:'An mobile application Design for a german language mobile application, made to make german learning more enjoyable',
+    thumbnail: './DeutschGenie.png',
+    tags: ['Figma','UI/UX Design'],
+    category: 'UI/UX Design',
     featured: false,
     date: '2024-05',
   },

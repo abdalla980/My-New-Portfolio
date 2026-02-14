@@ -8,7 +8,7 @@ gsap.registerPlugin(ScrollTrigger);
 const socialLinks = [
   { href: 'https://github.com', label: 'GitHub' },
   { href: 'https://linkedin.com', label: 'LinkedIn' },
-  { href: 'mailto:hello@example.com', label: 'Email' },
+  { href: 'mailto:abdullahizzldin1@gmail.com', label: 'Email' },
 ] as const;
 
 function scrollToTop() {
