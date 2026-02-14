@@ -95,4 +95,15 @@ export const projects: Project[] = [
     featured: false,
     date: '2024-05',
   },
+  {
+    slug: 'project-five',
+    title: "One-Phone One-Lie",
+    description:'An mobile application Design for a german language mobile application, made to make german learning more enjoyable',
+    thumbnail: './Group 42.png',
+    tags: ['Figma','UI/UX Design'],
+    liveUrl:'',
+    category: 'UI/UX Design',
+    featured: false,
+    date: '2024-05',
+  },
 ];
